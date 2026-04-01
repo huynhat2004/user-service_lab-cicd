@@ -1,2 +1,5 @@
-package com.vti.userservice.entity.enumm;public enum UserStatus {
+package com.vti.userservice.entity.enumm;
+
+public enum UserStatus {
+    ONLINE, OFFLINE, AWAY
 }

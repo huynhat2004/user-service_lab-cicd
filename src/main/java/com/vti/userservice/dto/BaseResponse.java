@@ -1,2 +1,15 @@
-package com.vti.userservice.dto;public class BaseResponse {
+package com.vti.userservice.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class BaseResponse<T> {
+    private T data;
+    private String message;
 }
