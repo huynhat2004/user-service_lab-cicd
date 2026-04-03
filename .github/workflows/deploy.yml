@@ -40,9 +40,9 @@ jobs:
       - name: List built artifacts
         run: ls -lh ${{ github.workspace }}/target
 
-      # Copy .jar sang chỗ bạn muốn chạy app
+      # Copy .jar sang chỗ bạn muốn chạy
       - name: Copy jar to run directory
         run: |
           cp ${{ github.workspace }}/target/*.jar \
              /home/huynhat/user-service/userservice_source/user-management.jar
-          chown huynhat:ubuntu-vti /home/huynhat/user-service/userservice_source/user-management.jar
+          chown huynhat:huynhat /home/huynhat/user-service/userservice_source/user-management.jar
